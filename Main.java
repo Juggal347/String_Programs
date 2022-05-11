@@ -10,10 +10,11 @@ public class Main {
         System.out.println("Enter a string:");
         String str = sc.nextLine();
 
-        System.out.println("Enter index:");
-        int index = sc.nextInt();
+        System.out.println("Enter range:");
+        int x = sc.nextInt();
+        int y = sc.nextInt();
 
-        System.out.println("Unicode codepoint before index "+index+" is: "+str.codePointBefore(index));
+        System.out.println("Unicode codepoint count in range "+x+" to "+y+" is: "+str.codePointCount(x,y));
         sc.close();
     }
 }
