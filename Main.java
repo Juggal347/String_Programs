@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Enter index:");
         int index = sc.nextInt();
 
-        System.out.println("Unicode codepoint at index "+index+" is: "+str.codePointAt(index));
+        System.out.println("Unicode codepoint before index "+index+" is: "+str.codePointBefore(index));
         sc.close();
     }
 }
