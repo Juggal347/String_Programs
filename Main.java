@@ -13,17 +13,9 @@ public class Main {
         System.out.println("Enter second string:");
         String str2 = sc.nextLine();
 
-        int result = str1.compareToIgnoreCase(str2);
+        String str3 = str1.concat(str2);
 
-        if (result<0)
-            System.out.println(str1+" is less than "+str2);
-
-        else if (result == 0)
-            System.out.println(str1+" is equal to "+str2);
-
-        else
-            System.out.println(str1+" is greater than "+str2);
-
+        System.out.println("String after concatenation is: "+ str3);
         sc.close();
     }
 }
