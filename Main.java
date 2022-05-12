@@ -7,14 +7,23 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a string:");
-        String str = sc.nextLine();
+        System.out.println("Enter first string:");
+        String str1 = sc.nextLine();
 
-        System.out.println("Enter range:");
-        int x = sc.nextInt();
-        int y = sc.nextInt();
+        System.out.println("Enter second string:");
+        String str2 = sc.nextLine();
 
-        System.out.println("Unicode codepoint count in range "+x+" to "+y+" is: "+str.codePointCount(x,y));
+        int result = str1.compareTo(str2);
+
+        if (result<0)
+            System.out.println(str1+" is less than "+str2);
+
+        else if (result==0)
+            System.out.println(str1+" is equal to "+str2);
+
+        else
+            System.out.println(str1+" is greater than "+str2);
+
         sc.close();
     }
 }
