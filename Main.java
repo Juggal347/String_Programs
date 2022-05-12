@@ -13,9 +13,7 @@ public class Main {
         System.out.println("Enter second string:");
         String str2 = sc.nextLine();
 
-        String str3 = str1.concat(str2);
-
-        System.out.println("String after concatenation is: "+ str3);
+        System.out.println(str1.contains(str2));
         sc.close();
     }
 }
